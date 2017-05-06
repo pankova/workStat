@@ -15,12 +15,16 @@ type Config struct {
 	Tocken string
 	Common string
 	Version string
+	CountriesCode string
 }
 
 func NewConfig() Config {
 	config := Config{
 		Tocken: "&access_token=38f3d5532ceabcec3fc0140d46f0d9dd784b5c6f2b9e8eb2c6daa46b270236f96b10a22b433c478849180",
 		Common: "https://api.vk.com/method/",
-		Version: "v=5.62"}
+		Version: "v=5.62",
+		// чтобы добавить страны, нужно дописать ее код из
+		// https://vk.com/dev/country_codes
+		CountriesCode: "RU,UA,KZ"}
 	return config
 }

@@ -51,7 +51,7 @@ func main(){
 	request := new(objectRequest.ObjectRequest)
 
 	// ***** county ****** //
-	countriesCode := "RU,UA,KZ"
+	countriesCode := setting.CountriesCode
 	getCountries := setting.Common + "database.getCountries?" + setting.Version + setting.Tocken + "&code=" + countriesCode
 	country := request.DoRequest("страны", getCountries)
 
